@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    background-color: #4a4a4a;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navbar a:not(:last-child)::after {
+    content: "|";
+    color: #bdbdbd;
+    position: absolute;
+    right: -20px;
+}
+
+.navbar a:hover {
+    color: #9ad14b;
+}
+
+.container {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.service-form {
+    margin-top: 20px;
+}
+
+.service-form select {
+    width: 320px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.service-form button {
+    margin-top: 15px;
+    padding: 8px 25px;
+    font-size: 14px;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.slot-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+.slot-table th {
+    font-size: 12px;
+    padding: 6px;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+}
+
+.slot-table td {
+    height: 28px;
+    border: 1px solid #ddd;
+}
+
+.slot-available {
+    background-color: #2ecc71;
+}
+
+.slot-booked {
+    background-color: #e74c3c;
+}
+
+.footer {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.booking-title {
+    text-align: left;
+    margin-bottom: 15px;
+}
+.title-big {
+    font-size: 22px;
+    font-weight: bold;
+}
+.title-small {
+    font-size: 14px;
+    color: #666;
+}
+
+.entries-bar {
+    text-align: left;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.grid-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.page-link {
+    padding: 3px 8px;
+    border: 1px solid #ccc;
+    margin-left: 4px;
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: none;
+}
+.page-link.active {
+    background: #4a4a4a;
+    color: #fff;
+}
+
+.slot-available {
+    background-color: #2ecc71;
+}
+.slot-booked {
+    background-color: #e74c3c;
+}
+
+.bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 13px;
+}
+.bottom-left {
+    color: red;
+}
+.home-link {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.page-link.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.demo-page {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.demo-title {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.demo-text {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: auto;
+}
+
+.code-box {
+    margin-top: 30px;
+    display: inline-block;
+    background: #111;
+    color: #2ecc71;
+    padding: 15px 25px;
+    font-family: monospace;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-parent {
+    cursor: pointer;
+}
+
+.nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #6b8e23;
+    min-width: 220px;
+    text-align: left;
+    z-index: 999;
+}
+
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+    display: block;
+}
